@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Динамо</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- шапка начало -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo"></div>
+        <nav class="header__menu">
+          <div class="header__up-navigation">
+            <ul class="header__menu-list">
+              <li class="header__menu-link"><a href="#">ФК ДИНАМО
+                  <span><img src="./images/header/new_window_arrow.svg" alt="new window"></span></a></li>
+              <li class="header__menu-link"><a href="#">ЖФК ДИНАМО
+                  <span><img src="./images/header/new_window_arrow.svg" alt="new window"></span></a></li>
+              <li class="header__menu-link"><a href="#">ДИНАМО-2
+                  <span><img src="./images/header/new_window_arrow.svg" alt="new window"></span></a></li>
+              <li class="header__menu-link"><a href="#">ЭНДАУМЕНТ-ФОНД
+                  <span><img src="./images/header/new_window_arrow.svg" alt="new window"></span></a></li>
+            </ul>
+          </div>
+          <div class="header__down-navigation">
+            <ul class="header__menu-down-list">
+              <li class="header__menu-down-link"><a href="#">Новости</a></li>
+              <li class="header__menu-down-link"><a href="#">Команды</a></li>
+              <li class="header__menu-down-link"><a href="#">Матчи</a></li>
+              <li class="header__menu-down-link"><a href="#">Академия</a></li>
+              <li class="header__menu-down-link"><a href="#">Магазин
+                  <span><img src="./images/header/new_window_arrow.svg" alt="new window"></span></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__block-right">
+          <div class="header__block-logo"></div>
+          <div class="header__block-functions">
+            <div class="header__block-login"></div>
+            <div class="header__block-search"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- шапка конец -->
+
+    <!-- главная начало -->
+    <main class="main">
+      <div class="main__inner">
+        <div class="main__image">
+          <h1 class="main__title">команды</h1>
+        </div>
+        <div class="main__menu-tab">
+          <button class="main__tab" data-tab="#players-tab">игроки</button>
+          <button class="main__tab" data-tab="#coaches-tab">тренеры</button>
+          <button class="main__tab" data-tab="#employees-tab">сотрудники</button>
+        </div>
+      </div>
+    </main>
+    <!-- главная конец -->
+
+    <!-- выпадающее меню начало -->
+    <div class="dropdown">
+      <div class="dropdown__inner">
+        <div class="dropdown__tab">
+          <div class="dropdown__tab-text">
+            <h4 class="dropdown__tab-title">Пол команды</h4>
+            <p class="dropdown__tab-subtitle">МУЖСКОЙ</p>
+          </div>
+          <img src="./images/dropdown/arrow_dropdown.svg" alt="dropdown arrow">
+        </div>
+        <div class="dropdown__tab">
+          <div class="dropdown__tab-text">
+            <h4 class="dropdown__tab-title">состав</h4>
+            <p class="dropdown__tab-subtitle">U-19</p>
+          </div>
+          <img src="./images/dropdown/arrow_dropdown.svg" alt="dropdown arrow">
+        </div>
+        <div class="dropdown__tab">
+          <div class="dropdown__tab-text">
+            <h4 class="dropdown__tab-title">Позиция</h4>
+            <p class="dropdown__tab-subtitle">Все</p>
+          </div>
+          <img src="./images/dropdown/arrow_dropdown.svg" alt="dropdown arrow">
+        </div>
+      </div>
+    </div>
+    <!-- выпадающее меню конец -->
+
+    <!-- команда начало -->
+    <section class="team">
+      <div class="team__inner team__item" id="players-tab">
+        <!-- вратари начало -->
+        <div class="team__cards">
+          <h2 class="team__cards-title">Вратари</h2>
+          <div class="team__card">
+            <div class="team__player team__goalies">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Давыдов Денис</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/goalies/Shunin.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">1</h1>
+              </div>
+            </div>
+            <div class="team__player team__goalies">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Деманов Максим</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/goalies/Leshuk.svg" alt="leshuk">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">31</h1>
+              </div>
+            </div>
+            <div class="team__player team__goalies">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Купцов Илья</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/goalies/Mitsaev.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">95</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- вратари конец -->
+
+        <!-- защитники начало -->
+        <div class="team__cards">
+          <h2 class="team__cards-title">защитники</h2>
+          <div class="team__card">
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Ordets.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">12</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Morozov.svg" alt="morozov">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">4</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Shimansky.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">8</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Grulev.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">5</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <img style="margin-left: 5px" src="./images/team/national-flag/german-flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Silvester.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">11</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Ordets.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">19</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Ordets.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">6</h1>
+              </div>
+            </div>
+            <div class="team__player team__defense">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Grulev.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">7</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- защитники конец -->
+
+        <!-- полузащитники начало -->
+        <div class="team__cards">
+          <h2 class="team__cards-title">полузащитники</h2>
+          <div class="team__card">
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Ordets.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">2</h1>
+              </div>
+            </div>
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Morozov.svg" alt="morozov">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">14</h1>
+              </div>
+            </div>
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <img style="margin-left: 5px" src="./images/team/national-flag/german-flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Silvester.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">7</h1>
+              </div>
+            </div>
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Grulev.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">21</h1>
+              </div>
+            </div>
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Shimansky.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">8</h1>
+              </div>
+            </div>
+            <div class="team__player team__halfback">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Ordets.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">31</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- полузащитники конец -->
+
+        <!-- нападающие начало -->
+        <div class="team__cards">
+          <h2 class="team__cards-title">нападающие</h2>
+          <div class="team__card">
+            <div class="team__player team__forward">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Silvester.svg" alt="ordets">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">24</h1>
+              </div>
+            </div>
+            <div class="team__player team__forward">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Morozov.svg" alt="morozov">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">6</h1>
+              </div>
+            </div>
+            <div class="team__player team__forward">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <img style="margin-left: 5px" src="./images/team/national-flag/german-flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Shimansky.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">21</h1>
+              </div>
+            </div>
+            <div class="team__player team__forward">
+              <div class="team__player-card">
+                <div class="team__player-info">
+                  <h3 class="team__player-name">Расул Мицаев</h3>
+                  <div class="team__player-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="team__player-age">19 лет (26.01.2002)</div>
+                  </div>
+                </div>
+                <img class="team__player-img" src="./images/team/defense/defense-Grulev.svg" alt="shunin">
+                <div class="team__player-shadow"></div>
+                <h1 class="team__player-number">10</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- нападающие конец -->
+
+
+      </div>
+      <div class="coaches__inner team__item" id="coaches-tab">
+        <div class="coaches__cards">
+          <div class="coaches__card">
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Кирилл Новиков</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Главный тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Иван Карандашов</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Расул Мицаев</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Иван Карандашов</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Кирилл Новиков</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Главный тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Расул Мицаев</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Кирилл Новиков</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Главный тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+            <div class="coaches__coach">
+              <div class="coaches__coach-card">
+                <div class="coaches__coach-info">
+                  <h3 class="coaches__coach-name">Иван Карандашов</h3>
+                  <div class="coaches__coach-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="coaches__coach-age">Тренер</div>
+                  </div>
+                </div>
+                <img class="coaches__coach-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="coaches__coach-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="employees__inner team__item" id="employees-tab">
+        <div class="employees__cards">
+          <div class="employees__card">
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Кирилл Новиков</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">Главный врач</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Иван Карандашов</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">начальник команды</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Расул Мицаев</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">администратор</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Иван Карандашов</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">массажист</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Кирилл Новиков</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">физиотерапевт</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Расул Мицаев</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">видеооператор</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Кирилл Новиков</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">переводчик</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/head_coach_Novikov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+            <div class="employees__employee">
+              <div class="employees__employee-card">
+                <div class="employees__employee-info">
+                  <h3 class="employees__employee-name">Иван Карандашов</h3>
+                  <div class="employees__employee-nationality">
+                    <img src="./images/team/national-flag/russian_flag.svg" alt="national flag">
+                    <div class="employees__employee-age">переводчик</div>
+                  </div>
+                </div>
+                <img class="employees__employee-img" src="./images/coaches/coach-Karandashov.svg" alt="shunin">
+                <div class="employees__employee-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- команда конец -->
+
+    <!-- подвал начало -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <h4 class="footer__title">наши партнеры</h4>
+        <div class="footer__partners">
+          <div class="footer__partners-images">
+            <img src="./images/footer/partners/vtb.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images">
+            <img src="./images/footer/partners/kelme.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images">
+            <img src="./images/footer/partners/snow.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images">
+            <img src="./images/footer/partners/marafon-bet.svg" alt="vtb">
+          </div>
+        </div>
+        <div class="footer__partners">
+          <div class="footer__partners-images partners-down">
+            <img src="./images/footer/partners/pik.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images partners-down">
+            <img src="./images/footer/partners/bml.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images partners-down">
+            <img src="./images/footer/partners/senezhskaya.svg" alt="vtb">
+          </div>
+          <div class="footer__partners-images partners-down">
+            <img src="./images/footer/partners/solgar.svg" alt="vtb">
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__info-nav">
+            <h3 class="footer__info-title">Футбольный клуб</h3>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">Новости</a></li>
+              <li class="footer__link"><a href="#">Команды</a></li>
+              <li class="footer__link"><a href="#">Матчи</a></li>
+              <li class="footer__link"><a href="#">Динамо ТВ</a></li>
+              <li class="footer__link"><a href="#">Клуб</a></li>
+              <li class="footer__link"><a href="#">Билеты</a></li>
+              <li class="footer__link"><a href="#">Магазин</a></li>
+            </ul>
+          </div>
+          <div class="footer__info-nav">
+            <h3 class="footer__info-title">Мы в соцсетях</h3>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">Facebook</a></li>
+              <li class="footer__link"><a href="#">Вконтакте</a></li>
+              <li class="footer__link"><a href="#">Twitter</a></li>
+              <li class="footer__link"><a href="#">Instagram</a></li>
+              <li class="footer__link"><a href="#">Youtube</a></li>
+              <li class="footer__link"><a href="#">Telegram</a></li>
+            </ul>
+          </div>
+          <div class="footer__info-nav">
+            <h3 class="footer__info-title">Наши проекты</h3>
+            <ul class="footer__list">
+              <li class="footer__link"><a href="#">Академия</a></li>
+              <li class="footer__link"><a href="#">Ветераны</a></li>
+              <li class="footer__link"><a href="#">Программа лояльности</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__newsletter">
+            <h3 class="footer__newsletter-title">новостная рассылка</h3>
+            <div class="footer__newsletter-input">
+              <input type="text" placeholder="Email address">
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__rights-text">© 1923—2020 ФК «Динамо-Москва». Все права защищены.</p>
+          <p class="footer__rights-text">Design by Charmer</p>
+          <p class="footer__rights-text">Developed by Func.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- подвал конец -->
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
