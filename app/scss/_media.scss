@@ -1,0 +1,65 @@
+// @media (max-width: 2880px) {
+//     .main__tab {
+//         max-width: 720px;
+//     }
+// }
+// @media (max-width: 2160px) {
+//     .team__player.team__goalies:nth-child(3) {
+//         border-right: 1px solid #0f6dc2;
+//     }
+//     .header {
+//         &__block-logo {
+//             border-bottom: 1px solid $color-blue;
+//         }
+//         &__block-functions {
+//            border-top: none;
+//         }
+//         &__block-login,
+//         &__block-search {
+//             height: 61px;
+//             border-left: 1px solid $color-blue;
+//             border-bottom: 1px solid $color-blue;
+//         }
+//     }
+// }
+
+// @media (max-width: 1440px) {
+//     .team__goalies:nth-child(3){
+//         border-right: none;
+//     }
+// }
+
+// @media (max-width: 1440px) {
+//     .main__tab {
+//         max-width: 720px;
+//     }
+//     .header {
+//         &__block-logo {
+//             position: relative;
+//             width: 120px;
+//             height: 59px;
+//             border-left: 1px solid $color-blue;
+//         }
+//         &__block-logo:before {
+//             content: "";
+//             position: absolute;
+//             background: url("../images/header/vtb_logo.svg") no-repeat center center/cover;
+//             left: 27px;
+//             top: 18px;
+//             width: 60px;
+//             height: 21px;
+//         }
+//         &__block-functions {
+//             display: flex;
+//             border-top: 1px solid $color-blue;
+//         }
+//         &__block-login,
+//         &__block-search {
+//             position: relative;
+//             width: 60px;
+//             height: 60px;
+//             border-left: 1px solid $color-blue;
+//             border-bottom: 1px solid $color-blue;
+//         }
+//     }
+// }
