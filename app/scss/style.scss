@@ -21,7 +21,8 @@ a {
 // шапка начало
 .header {
     &__inner {
-        display: flex;
+        display: grid;
+        grid-template-columns: 0.5fr 9fr 0.5fr;
     }
     &__logo {
         position: relative;
@@ -43,14 +44,60 @@ a {
     }
     &__up-navigation {
         padding: 20px 0;
+        width: 100%;
     }
     &__menu-list {
         width: 100%;
         display: flex;
     }
-    // &__menu-link:not(:first-child) a {
-    //     margin-left: 20px;
-    // }
+    .menu-mobile{
+        display: none;
+    }
+    .menu-burger {
+        width: 18px;
+        height: 14px;
+        cursor: pointer;
+        position: relative;
+    }
+    .menu-burger span {
+        background: $color-blue;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    .menu-burger span:first-child {
+        top: 0;
+    }
+    .menu-burger span:nth-child(2) {
+        top: 6px;
+    }
+    .menu-burger span:last-child {
+        top: 12px;
+    }
+    .menu-burger:hover span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-burger:hover span:first-child,
+    .menu-burger:hover span:last-child {
+        top: 6px;
+        background-color: red;
+    }
+    .menu-burger:hover span:first-child {
+        transform: rotate(45deg);
+    }
+    .menu-burger:hover span:last-child {
+        transform: rotate(-45deg);
+    }
+    .menu-burger__text {
+        font-weight: 500;
+        font-size: 14.2px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $color-blue;
+    }
     &__menu-link a {
         margin-left: 20px;
         font-weight: 500;
@@ -68,8 +115,7 @@ a {
         line-height: 20px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        width: 384px;
-        // width: 240px;
+        width: 100%;
         height: 61px;
         display: flex;
         align-items: center;
@@ -181,8 +227,6 @@ a {
     &__tab {
         border: none;
         width: 100%;
-        // max-width: 720px;
-        // max-width: 481px;
         height: 90px;
         background: $color-blue;
         font-weight: 500;
@@ -211,8 +255,6 @@ a {
     &__tab {
         position: relative;
         width: 100%;
-        // max-width: 720px;
-        // max-width: 480px;
         height: 90px;
         display: flex;
         justify-content: space-between;
@@ -222,8 +264,6 @@ a {
         content: "";
         position: absolute;
         width: 97%;
-        // width: 690px;
-        // width: 460px;
         height: 1px;
         background-color: #dee4ea;
         right: 10px;
@@ -584,7 +624,6 @@ a {
         color: #ffffff;
     }
     &__partners {
-        // display: flex;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
@@ -594,10 +633,8 @@ a {
         align-items: center;
         justify-content: center;
         width: 100%;
-        // max-width: 350px;
         height: 120px;
         border-top: 1px solid $border-blue;
-        // border: 1px solid #0f6dc2;
     }
     &__partners-images:nth-child(2),
     &__partners-images:nth-child(3),
@@ -616,7 +653,6 @@ a {
     &__info {
         margin-top: 40px;
         display: flex;
-        // justify-content: space-between;
     }
     &__info-nav:not(:first-child) {
         margin-left: 59px;
@@ -624,7 +660,6 @@ a {
     &__info-nav:nth-child(2) {
         max-width: 152px;
     }
-    // &__info-nav:nth-child(3),
     &__right-side {
         display: flex;
         margin-left: 87px;
@@ -652,11 +687,6 @@ a {
         line-height: 20px;
         color: $color-white;
     }
-    // &__newsletter {
-    //     width: auto;
-    //     position: absolute;
-    //     right: 20px;
-    // }
     &__newsletter953px {
         display: none;
     }
@@ -688,10 +718,15 @@ a {
     }
     &__rights {
         display: grid;
-        grid-template-columns: 6fr 1fr 1fr;
+        // grid-template-columns: 6fr 1fr 1fr;
+        // grid-template-columns: 6fr 1.5fr 1fr;
+        grid-template-columns: 5fr 2fr;
+    }
+    &__rights-block{
+        display: grid;
+        grid-template-columns: 0.8fr 0.5fr;
     }
     &__rights-text {
-        // position: absolute;
         margin-top: 80px;
         font-weight: 400;
         font-size: 14.2px;
@@ -699,40 +734,25 @@ a {
         display: flex;
         align-items: flex-end;
         color: $color-white;
-        // width: 241px;
-        // bottom: 20px;
     }
-    &__rights-text span{
+    &__rights-text span {
         font-weight: 500;
         margin-left: 3px;
-    }
-    &__rights-text:nth-child(2) {
-        min-width: 140px;
-        // right: 250px;
-    }
-    &__rights-text:nth-child(3) {
-        min-width: 140px;
-        // right: 10px;
     }
 }
 // подвал конец
 
 @media (max-width: 2160px) {
-    .coaches__coach:nth-child(4),
-    .employees__employee:nth-child(4) {
-        border-right: 1px solid $border-blue;
+    .header__block-login,
+    .header__block-search {
+        height: 61px;
+    }
+    .header__menu-down-link {
+        height: 62px;
     }
 }
 
 @media (max-width: 1920px) {
-    .header__menu-down-link {
-        width: 336px;
-    }
-    .header__block-login,
-    .header__block-search {
-        height: 60.5px;
-    }
-
     .team__player.team__defense:nth-child(4),
     .team__player.team__defense:nth-child(8),
     .team__player.team__halfback:nth-child(4) {
@@ -769,12 +789,6 @@ a {
 }
 
 @media (max-width: 1440px) {
-    // .header {
-    //     display: none;
-    // }
-    .header__menu-down-link {
-        width: 240px;
-    }
     .dropdown__tab::before {
         width: 94%;
     }
@@ -834,9 +848,6 @@ a {
 }
 
 @media (max-width: 1180px) {
-    .header {
-        display: none;
-    }
     .footer__title {
         font-size: 18px;
         padding-bottom: 20px;
@@ -866,12 +877,15 @@ a {
     .footer__rights-text {
         margin-top: 60px;
     }
+    .footer__rights{
+        grid-template-columns: 3fr 2fr;
+    }
+    .footer__rights-block {
+        grid-template-columns: 1.5fr 1fr;
+    }
 }
 
 @media (max-width: 960px) {
-    .header {
-        display: none;
-    }
     .header__menu-down-link:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)),
     .header__menu-down-link:nth-child(1n) {
         border: none;
@@ -879,36 +893,27 @@ a {
     .header__menu-link:nth-child(5) {
         display: none;
     }
-    .header__menu-down-link {
-        width: 75px;
-        border: none;
-        margin-left: 20px;
-        height: 60px;
-    }
     .header__menu-link:nth-child(6) {
         position: absolute;
         right: 140px;
         display: block;
     }
     .header__menu-down-link:nth-child(6) {
-        width: 103px;
         display: flex;
     }
-    .header__menu-down-link:nth-child(3) {
-        width: 55px;
-    }
-    .header__menu-down-link:nth-child(5) {
-        width: 95px;
+    .header__menu-down-link {
+        margin-left: 20px;
+        height: 61px;
+        width: auto;
     }
     .header__menu-down-list {
         position: relative;
         border-top: 1px solid $border-blue;
         border-bottom: 1px solid $border-blue;
-        width: 720px;
     }
     .header__block-login,
     .header__block-search {
-        height: 61px;
+        height: 62px;
     }
     .team__player,
     .coaches__coach,
@@ -1060,7 +1065,111 @@ a {
     // }
 }
 
+@media (max-width: 870px) {
+    .header__logo {
+        min-width: 100px;
+        min-height: 50px;
+        height: 100px;
+    }
+
+    .header__menu-link a {
+        margin-left: 15px;
+        font-size: 10px;
+    }
+
+    .header__up-navigation {
+        padding: 10px 0;
+    }
+
+    .header__menu-down-link {
+        height: 59px;
+    }
+    .header__logo::before {
+        width: 100px;
+        height: 70px;
+    }
+    .header__block-logo:before {
+        top: 9px;
+    }
+    .header__block-logo {
+        height: 39px;
+    }
+    .header__block-login,
+    .header__block-search {
+        height: 60px;
+    }
+    .header__menu-down-link {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .footer__rights {
+        grid-template-columns: 2.5fr 2fr;
+    }
+    .footer__rights-block {
+        grid-template-columns: 2fr 1.5fr;
+    }
+}
+
 @media (max-width: 768px) {
+    .header .menu-mobile {
+        display: flex;
+        align-items: center;
+    }
+    .header__menu-list {
+        display: none;
+    }
+    .header__up-navigation {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .header .menu-burger__text{
+        margin-left: 10px;
+    }
+    .header__down-navigation {
+        display: none;
+    }
+    .header__block-right {
+        display: flex;
+    }
+    .header__logo {
+        min-width: 50px;
+        height: 50px;
+    }
+    .header__logo::before {
+        width: 48px;
+        height: 36px;
+        top: 7px;
+        left: 2px;
+    }
+    .header__menu {
+        height: 50px;
+    }
+    .header__block-functions {
+        border-top: none;
+    }
+    .header__block-login,
+    .header__block-search {
+        height: 50px;
+        width: 49px;
+        border-bottom: none;
+    }
+    .header__block-logo {
+        top: 8px;
+        border-left: none;
+        width: 80px;
+    }
+    .header__block-logo:before {
+        width: 40px;
+        height: 14px;
+    }
+    .header__block-login:before,
+    .header__block-search:before {
+        left: 17px;
+        top: 18px;
+        width: 15px;
+        height: 15px;
+    }
     .main__title {
         font-size: 83px;
     }
@@ -1124,6 +1233,18 @@ a {
     .footer__partners-images:nth-child(9) {
         display: block;
         border-left: 1px solid $border-blue;
+    }
+}
+
+@media (max-width: 700px){
+    .footer__rights{
+        grid-template-columns: 3fr 2fr;
+    }
+    .footer__rights-block {
+        display: block;
+    }
+    .footer__rights-text:nth-child(2){
+        margin-top: 3px;
     }
 }
 
@@ -1225,10 +1346,6 @@ a {
         padding-left: 15px;
         padding-right: 60px;
     }
-    // .team__player-name {
-    //     font-size: 20px;
-    //     line-height: 25px;
-    // }
     .team__player-number {
         margin-top: 190px;
         align-items: center;
@@ -1254,9 +1371,6 @@ a {
     .employees__employee-shadow {
         width: 90%;
     }
-    // .footer {
-    //     display: none;
-    // }
     .footer__title {
         padding-bottom: 15px;
     }
@@ -1310,10 +1424,10 @@ a {
     .footer__rights {
         display: block;
     }
-    .footer__rights-text{
+    .footer__rights-text {
         margin-top: 110px;
     }
-    .footer__rights-text:nth-child(2) {
+    .footer__rights-text2 {
         margin-top: 20px;
     }
     .footer__rights-text:nth-child(3) {
